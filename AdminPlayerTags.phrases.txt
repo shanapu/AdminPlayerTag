@@ -1,0 +1,42 @@
+"Phrases"		
+{
+	"tags_T"
+	{
+		"en"		"Terrorist"
+	}
+	
+	"tags_CT"
+	{
+		"en"		"Counter-Terrorist"
+	}
+	
+	"tags_VIP"
+	{
+		"en"		"[VIP]"
+	}
+	
+	"tags_SVIP"
+	{
+		"en"		"[SuperVIP]"
+	}
+	
+	"tags_UVIP"
+	{
+		"en"		"[UltraVIP]"
+	}
+	
+	"tags_ADM"
+	{
+		"en"		"[Admin]"
+	}
+	
+	"tags_CADM"
+	{
+		"en"		"[ChiefAdmin]"
+	}
+	
+	"tags_HADM"
+	{
+		"en"		"[HeadAdmin]"
+	}
+}
