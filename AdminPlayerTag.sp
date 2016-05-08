@@ -74,7 +74,7 @@ public int HandleTag(int client)
 			Format(tagsHADM, sizeof(tagsHADM), "%t" ,"tags_HADM", LANG_SERVER);
 			CS_SetClientClanTag(client, tagsHADM); 
 		}
-		else if (GetUserFlagBits(client) & ADMFLAG_CUSTOM6)
+		else if (GetUserFlagBits(client) & ADMFLAG_BAN)
 		{
 			Format(tagsCADM, sizeof(tagsCADM), "%t" ,"tags_CADM", LANG_SERVER);
 			CS_SetClientClanTag(client, tagsCADM); 
