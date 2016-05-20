@@ -32,22 +32,12 @@ public void OnPluginStart()
 	HookEvent("player_connect", checkTag);
 	HookEvent("player_team", checkTag);
 	HookEvent("player_spawn", checkTag);
+	HookEvent("player_death", checkTag);
+	HookEvent("round_start", checkTag);
 
 }
 
 public void OnClientPutInServer(int client)
-{
-	HandleTag(client);
-	return;
-}
-
-public int warden_OnWardenCreated(int client)
-{
-	HandleTag(client);
-	return;
-}
-
-public int warden_OnWardenRemoved(int client)
 {
 	HandleTag(client);
 	return;
