@@ -32,7 +32,6 @@ public void OnPluginStart()
 	HookEvent("player_connect", checkTag);
 	HookEvent("player_team", checkTag);
 	HookEvent("player_spawn", checkTag);
-	HookEvent("player_death", checkTag);
 	HookEvent("round_start", checkTag);
 
 }
@@ -45,10 +44,18 @@ public void OnClientPutInServer(int client)
 
 public Action checkTag(Handle event, char[] name, bool dontBroadcast)
 {
-	int client = GetClientOfUserId(GetEventInt(event, "userid"));
-	if (0 < client)
+	CreateTimer(1.0, DelayCheck);
+	return Action;
+}
+
+public Action DelayCheck(Handle timer) 
+{
+	for(int client = 1; client <= MaxClients; client++) if(IsClientInGame(client))
 	{
-		HandleTag(client);
+		if (0 < client)
+		{
+			HandleTag(client);
+		}
 	}
 	return Action;
 }
